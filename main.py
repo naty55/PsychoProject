@@ -5,6 +5,7 @@ from pages import MainFrame, DefaultEnglishPage, AddWord, QuizPage, Page, Settin
 
 
 class App:
+    """control the main app and in charge to filp page when neede"""
     def __init__(self, window):
         self.main_frame = MainFrame(window)
         self.main_frame.master.bind("<BackSpace>", lambda event: self.go_back())
